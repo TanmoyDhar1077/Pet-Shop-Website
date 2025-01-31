@@ -27,17 +27,38 @@
             }
         }
     </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .btn1 {
+        display: inline-flex;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color:  #111;
+        font-family: Sora, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 8px;
+      }
+    }
+  </style>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
+        <!-- navbar -->
         <section class="nav-section bg-color2 py-[27px] border-b-[1px] border-black md:border-b-0">
             <div class="navbar container mx-auto justify-between overflow-hidden">
                 <div class="navbar-start">
                     <a class="flex items-center gap-3">
                         <img src="./assets/img/logo-header.png" alt="header logo">
-                        <h3 class="text-[1.625rem] font-sora hidden sm:block">Browse<span class="text-color1">4</span>Pets</h3>
+                        <h3 class="text-[1.625rem] font-sora hidden sm:block">Browse<span
+                                class="text-color1">4</span>Pets</h3>
                     </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -48,12 +69,14 @@
                     </ul>
                 </div>
                 <div class="navbar-end lg:flex gap-4 hidden">
-                    <img src="./assets/img/bell.png" alt="">
-                    <img src="./assets/img/search.png" alt="">
-                    <a class="btn font-sora text-xl font-normal border-color1 bg-color2 hover:bg-color1 hover:border-color1">Login</a>
-                    <a class="btn font-sora text-xl font-normal bg-color1 hover:border-color1 hover:bg-color2">Register</a>
+                    <a href=""><img src="./assets/img/bell.png" alt=""></a>
+                    <a href=""><img src="./assets/img/search.png" alt=""></a>
+                    <a
+                        class="btn font-sora text-xl font-normal border-color1 bg-color2 hover:bg-color1 hover:border-color1">Login</a>
+                    <a
+                        class="btn font-sora text-xl font-normal bg-color1 hover:border-color1 hover:bg-color2">Register</a>
                 </div>
-                <!-- hamburger menu (screen width < 1024px) -->     
+                <!-- hamburger menu (screen width < 1024px) -->
                 <div class="dropdown lg:hidden relative">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -68,11 +91,24 @@
                         <li><a href="#">Breeds</a></li>
                         <li><a href="#">Contact us</a></li>
                     </ul>
-                </div>           
+                </div>
             </div>
         </section>
+
+        <!-- Hero section -->
+        <section class="hero-section pt-[100px]">
+            <div class="container mx-auto">
+                <div class="banner-content flex flex-col gap-6 mx-4 md:mx-0">
+                    <h1 class="font-adlam lg:text-[56px] lg:w-[681px] text-[30px] w-[100%]">Pamper Your Pet, Because They Deserve the Best</h1>
+                    <p class="font-sora text-[1rem] w-[100%] lg:text[1.25rem] lg:w-[672px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                        make tails wag with joy!</p>
+                </div>
+                <a href="" class="btn1 bg-color1 mt-[24px] mx-4 md:mx-0">Find a pet</a>
+            </div>
+        </section>
+
     </header>
-    
+
 
     <main>
 
