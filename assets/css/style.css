@@ -1,19 +1,38 @@
-
 /* hero section */
 .hero-section .banner-image {
-   position: absolute;
-   top: 75%;
-   left: 60%;
-   transform: translate(-50%, -50%);
-   width: 100%;
-   z-index: -1;
-   overflow: hidden;
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
 }
 
+/* product section */
 .product-section .img-positation {
     position: absolute;
     top: 58%;
     left: 74%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Price Section */
+.price-section .img-positation1 {
+    position: absolute;
+    top: 54%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+}
+
+.price-section .img-positation2 {
+    position: absolute;
+    top: 61%;
+    left: 99%;
     transform: translate(-50%, -50%);
     width: 100%;
     overflow: hidden;
@@ -27,6 +46,7 @@
         opacity: 0;
         transform: translateX(-30px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -38,6 +58,7 @@
         opacity: 0;
         transform: translateX(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -48,6 +69,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -58,6 +80,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -88,13 +111,39 @@
         top: 105%;
         left: 50%;
     }
+
     /* Porduct Section */
     .product-section .last-card {
-    display: none;
+        display: none;
     }
 
     .product-section .img-positation {
         top: 25%;
         left: 98%;
+    }
+
+    /* Price Section */
+    .price-section .big-card {
+        padding: 38px 34px;
+    }
+
+    .price-section .img-positation1 {
+        position: absolute;
+        top: 60%;
+        left: 68%;
+        width: 340px;
+        height: 432px;
+    }
+
+    .price-section .small-card {
+        padding: 38px 34px;
+    }
+
+    .price-section .img-positation2 {
+        position: absolute;
+        top: 60%;
+        left: 65%;
+        width: 340px;
+        height: 432px;
     }
 }

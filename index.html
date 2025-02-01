@@ -20,7 +20,8 @@
                         'color1': '#FFDC26',
                         'color2': '#FFF9F4;',
                         'color3': '#F9DF8A;',
-
+                        'color4': 'rgba(255, 220, 38, 0.50);',
+                        'color5': 'rgba(17, 17, 17, 0.70);',
                     },
                     fontFamily: {
                         'sora': ['Sora', 'sans-serif'],
@@ -75,6 +76,22 @@
         border-radius: 10px;
         border: 1px solid rgba(17, 17, 17, 0.10);
         background: #FFF;
+      }
+
+      .big-card {
+        height: 480px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: linear-gradient(109deg, #F8CCFB 1.27%, #ACD2FD 100%);
+        padding: 136px 88px;
+      }
+
+      .small-card {
+        height: 480px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: linear-gradient(109deg, #FFF9F4 1.27%, #F9DF8A 100%); 
+        padding: 55px 48px;
       }
     }
   </style>
@@ -132,9 +149,12 @@
             <div class="container mx-auto">
                 <div class="relative">
                     <div class="banner-content flex flex-col gap-6 mx-4 md:mx-0">
-                        <h1 class="font-adlam lg:text-[56px] lg:w-[681px] text-[30px] w-[100%] animate-fade-slide-left">Pamper Your Pet, Because
+                        <h1 class="font-adlam lg:text-[56px] lg:w-[681px] text-[30px] w-[100%] animate-fade-slide-left">
+                            Pamper Your Pet, Because
                             They Deserve the Best</h1>
-                        <p class="font-sora text-[1rem] w-[100%] lg:text[1.25rem] lg:w-[672px] leading-9 animate-fade-slide-right">Discover a
+                        <p
+                            class="font-sora text-[1rem] w-[100%] lg:text[1.25rem] lg:w-[672px] leading-9 animate-fade-slide-right">
+                            Discover a
                             world of treats, toys, and essentials handpicked for your furry friends. Shop now and
                             make tails wag with joy!</p>
                         <a href="" class="btn1 bg-color1 animate-fade">Find a pet</a>
@@ -440,10 +460,76 @@
 
         </section>
 
+        <!-- Price Section -->
+        <section
+            class="price-section pt-[50px] lg:pt-[140px] pb-[326px] lg:pb-[405px] mx-[10px] sm:mx-0 overflow-hidden">
+            <div class="container mx-auto">
+                <h2 class="font-adlam text-2xl lg:text-[2.25rem] mb-[32px] md:mb-[48px]">Everyday low Price</h2>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <!-- Big Card -->
+                    <div class="big-card w-full lg:w-3/5 flex flex-col gap-4 relative">
+                        <p class="font-sora font-[1.25rem] hidden lg:block">Under Price</p>
+                        <h2 class="font-adlam text-[1.375rem] lg:text-[2rem]">Pet Grooming Mitt</h2>
+                        <h2 class="font-adlam text-white text-[1.5em] hidden lg:block">(Easy Hair Removal)</h2>
+                        <h2 class="font-adlam text-[2.4rem] lg:text-[3.5rem] text-white lg:text-black">$7.99</h2>
+                        <div class="img-positation1">
+                            <img src="./assets/img/cute-dog-mid.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Small Card -->
+                    <div class="small-card w-full lg:w-2/5 flex flex-col gap-3 relative">
+                        <h2 class="font-adlam text-[1.375rem] lg:text-[2rem]">T-Shirt for Dogs</h2>
+                        <h2 class="font-adlam text-[2.4rem] lg:text-[3.5rem] text-color1">$7.99</h2>
+                        <div class="img-positation2">
+                            <img src="./assets/img/cute-pet-mid.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="bg-color4 pt-[366px] pb-[55px] lg:pb-[141px]">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mx-[10px] sm:mx-0">
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-4 items-center">
+                        <img src="./assets/img/logo-footer.png" alt="">
+                        <h1 class="font-sora text-[1.5rem]">Browse<span class="text-color1">4</span>Pets</h1>
+                    </div>
+                    <p class="font-sora text-[1.25rem] text-color5 w-full lg:w-[426px]">Discover a world of treats,
+                        toys, and essentials handpicked for your furry friends</p>
+                </div>
+
+                <ul class="flex flex-col gap-8">
+                    <li class="font-sora text-[1.25rem]"><a href="">Find a pet</a></li>
+                    <li class="font-sora text-[1.25rem]"><a href="">Breeds</a></li>
+                    <li class="font-sora text-[1.25rem]"><a href="">Contact us</a></li>
+                </ul>
+
+                <div class="flex flex-col gap-4">
+                    <h1 class="font-sora text-[1rem]">Follow Us</h1>
+                    <ul class="flex gap-5">
+                        <li><a href="#">
+                            <img src="./assets/img/fb.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="./assets/img/insta.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="./assets/img/linkdin.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="./assets/img/youtube.png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
 
     </footer>
 </body>
