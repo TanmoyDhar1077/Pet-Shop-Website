@@ -17,7 +17,9 @@
                     colors: {
                         clifford: '#da373d',
                         'color1': '#FFDC26',
-                        'color2': '#FFF9F4;'
+                        'color2': '#FFF9F4;',
+                        'color3': '#F9DF8A;',
+
                     },
                     fontFamily: {
                         'sora': ['Sora', 'sans-serif'],
@@ -38,6 +40,12 @@
         font-weight: 400;
         border-radius: 8px;
         width: 160px;
+      }
+      .items {
+        border-radius: 12px;
+        background: #F9DF8A;
+        width: 100%;
+        height: 254px;
       }
     }
   </style>
@@ -95,8 +103,10 @@
             <div class="container mx-auto">
                 <div class="relative">
                     <div class="banner-content flex flex-col gap-6 mx-4 md:mx-0">
-                        <h1 class="font-adlam lg:text-[56px] lg:w-[681px] text-[30px] w-[100%]">Pamper Your Pet, Because They Deserve the Best</h1>
-                        <p class="font-sora text-[1rem] w-[100%] lg:text[1.25rem] lg:w-[672px] leading-9">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                        <h1 class="font-adlam lg:text-[56px] lg:w-[681px] text-[30px] w-[100%]">Pamper Your Pet, Because
+                            They Deserve the Best</h1>
+                        <p class="font-sora text-[1rem] w-[100%] lg:text[1.25rem] lg:w-[672px] leading-9">Discover a
+                            world of treats, toys, and essentials handpicked for your furry friends. Shop now and
                             make tails wag with joy!</p>
                         <a href="" class="btn1 bg-color1">Find a pet</a>
                     </div>
@@ -110,7 +120,94 @@
 
 
     <main>
+        <!-- Catagories Section -->
+        <section class="catagories-section pt-[180px] lg:pt-[350px] mx-[10px] sm:mx-0">
+            <div class="container mx-auto">
+                <h2 class="font-adlam text-2xl lg:text-[2.25rem] mb-[32px] md:mb-[48px]">Browse By Categories</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                    <!-- items 1 -->
+                    <div class="items flex flex-col align-center">
+                        <div class="flex flex-col items-center pt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <circle cx="52" cy="52" r="52" fill="white"/>
+                                <image href="./assets/img/dog-cartoon.png" x="28" y="28" width="48" height="48"/>
+                            </svg>
+                        </div>
+                        <div class="pt-7 flex flex-col gap-3">
+                            <h4 class="text-[1.25rem] font-adlam text-center">Dogs</h4>
+                            <p class="text-[1rem] font-sora text-center">3 items</p>
+                        </div>
+                    </div>
+                    <!-- items 2 -->
+                    <div class="items flex flex-col align-center">
+                        <div class="flex flex-col items-center pt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <circle cx="52" cy="52" r="52" fill="white"/>
+                                <image href="./assets/img/fish-cartoon.png" x="28" y="28" width="48" height="48"/>
+                            </svg>
+                        </div>
+                        <div class="pt-7 flex flex-col gap-3">
+                            <h4 class="text-[1.25rem] font-adlam text-center">Fish</h4>
+                            <p class="text-[1rem] font-sora text-center">3 items</p>
+                        </div>
+                    </div>
+                    <!-- items 3 -->
+                    <div class="items flex flex-col align-center">
+                        <div class="flex flex-col items-center pt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <circle cx="52" cy="52" r="52" fill="white"/>
+                                <image href="./assets/img/cat-cartoon.png" x="28" y="28" width="48" height="48"/>
+                            </svg>
+                        </div>
+                        <div class="pt-7 flex flex-col gap-3">
+                            <h4 class="text-[1.25rem] font-adlam text-center">Cat</h4>
+                            <p class="text-[1rem] font-sora text-center">3 items</p>
+                        </div>
+                    </div>
+                    <!-- items 4 -->
+                    <div class="items flex flex-col align-center">
+                        <div class="flex flex-col items-center pt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <circle cx="52" cy="52" r="52" fill="white"/>
+                                <image href="./assets/img/bird-cartoon.png" x="28" y="28" width="48" height="48"/>
+                            </svg>
+                        </div>
+                        <div class="pt-7 flex flex-col gap-3">
+                            <h4 class="text-[1.25rem] font-adlam text-center">Birds</h4>
+                            <p class="text-[1rem] font-sora text-center">3 items</p>
+                        </div>
+                    </div>
+                    <!-- items 5 -->
+                    <div class="items flex flex-col align-center">
+                        <div class="flex flex-col items-center pt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <circle cx="52" cy="52" r="52" fill="white"/>
+                                <image href="./assets/img/mouse-cartoon.png" x="28" y="28" width="48" height="48"/>
+                            </svg>
+                        </div>
+                        <div class="pt-7 flex flex-col gap-3">
+                            <h4 class="text-[1.25rem] font-adlam text-center">Small pet</h4>
+                            <p class="text-[1rem] font-sora text-center">3 items</p>
+                        </div>
+                    </div>
+                    <!-- items 6 -->
+                    <div class="items flex flex-col align-center">
+                        <div class="flex flex-col items-center pt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <circle cx="52" cy="52" r="52" fill="white"/>
+                                <image href="./assets/img/rabbit-cartoon.png" x="28" y="28" width="48" height="48"/>
+                            </svg>
+                        </div>
+                        <div class="pt-7 flex flex-col gap-3">
+                            <h4 class="text-[1.25rem] font-adlam text-center">Rabit</h4>
+                            <p class="text-[1rem] font-sora text-center">3 items</p>
+                        </div>
+                    </div>
+                    
+                </div>
 
+            </div>
+        </section>
     </main>
 
     <footer>
