@@ -1,10 +1,18 @@
-/* NavBar*/
+/* hero section */
+.hero-section .banner-image {
+   position: absolute;
+   top: 75%;
+   left: 60%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   z-index: -1;
+   overflow: hidden;
+}
 
 
-/* Hero section */
-
-.hero-section {
-    background-image: url(../img/cat-big.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
+@media screen and (max-width: 620px) {
+    .hero-section .banner-image {
+        top: 105%;
+        left: 50%;
+    }
 }
