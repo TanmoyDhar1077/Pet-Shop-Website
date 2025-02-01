@@ -38,6 +38,18 @@
     overflow: hidden;
 }
 
+/* footer */
+
+
+footer .floating-item {
+    padding: 38px 89px;
+    border-radius: 16px;
+    position: absolute;
+    top: -250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 /* Animation */
@@ -142,8 +154,17 @@
     .price-section .img-positation2 {
         position: absolute;
         top: 60%;
-        left: 65%;
+        left: 62%;
         width: 340px;
         height: 432px;
     }
+
+    /* Footer */
+
+    footer .floating-item {
+        padding: 20px 40px;
+        top: -75%;
+        left: 50%;
+    }
+
 }
