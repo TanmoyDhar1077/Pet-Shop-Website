@@ -9,11 +9,29 @@
    overflow: hidden;
 }
 
+.product-section .img-positation {
+    position: absolute;
+    top: 58%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+}
+
+
 
 @media screen and (max-width: 620px) {
     .hero-section .banner-image {
         top: 105%;
         left: 50%;
     }
+    /* Porduct Section */
+    .product-section .last-card {
+    display: none;
+    }
 
+    .product-section .img-positation {
+        top: 25%;
+        left: 98%;
+    }
 }
